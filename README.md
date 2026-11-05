@@ -1,5 +1,7 @@
 # Security research
 
+I publish details here only after the vendor ships a fix and the advisory is public.
+
 ## Public findings
 
 Security vulnerabilities I found and reported through coordinated disclosure.
