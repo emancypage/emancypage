@@ -9,6 +9,8 @@ I publish details here only after the vendor ships a fix and the advisory is pub
 | CVE | Product | Affected | Fixed | Severity | Type | Published |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CVE-2026-111982](#cve-2026-111982) | Profile Builder (WordPress plugin) | < 4.0.5 | 4.0.5 | 7.2 High | Privilege escalation | 2026-10-21 |
+| — | [Chyrp Lite](#chyrp-lite-search-sql-injection) | v2026.02.02 (tested) | v2026.03 | — | Blind SQL injection | 2026-11-01 |
+| — | [Chyrp Lite](#chyrp-lite-password-reset-account-takeover) | v2026.02.02 (tested) | v2026.03 | — | Account takeover | 2026-11-01 |
 
 ## CVE-2026-111982
 
@@ -33,6 +35,40 @@ References:
 
 - [WPScan advisory](https://wpscan.com/vulnerability/b7d1fd86-3927-4cf2-88ed-46401e347320/)
 - [CVE-2026-111982](https://www.cve.org/CVERecord?id=CVE-2026-111982)
+
+## Chyrp Lite search SQL injection
+
+**Chyrp Lite: Blind SQL injection in search**
+
+- Product: [Chyrp Lite](https://github.com/xenocrat/chyrp-lite)
+- Affected versions: reproduced on v2026.02.02
+- Fixed in: v2026.03
+- Published: 2026-11-01
+
+The search functionality was vulnerable to blind SQL injection. The vendor fixed this issue in the v2026.03 "Sichuan" release and credited [@emancypage](https://github.com/emancypage) for reporting it.
+
+Fix: update Chyrp Lite to v2026.03 or later.
+
+References:
+
+- [Vendor release notes and researcher credit](https://github.com/xenocrat/chyrp-lite/releases/tag/v2026.03)
+
+## Chyrp Lite password reset account takeover
+
+**Chyrp Lite: Account takeover in the password reset flow**
+
+- Product: [Chyrp Lite](https://github.com/xenocrat/chyrp-lite)
+- Affected versions: reproduced on v2026.02.02
+- Fixed in: v2026.03
+- Published: 2026-11-01
+
+A vulnerability in the password reset flow could allow an attacker to take over another user's account. The vendor fixed this issue in the v2026.03 "Sichuan" release and credited [@emancypage](https://github.com/emancypage) for reporting it.
+
+Fix: update Chyrp Lite to v2026.03 or later.
+
+References:
+
+- [Vendor release notes and researcher credit](https://github.com/xenocrat/chyrp-lite/releases/tag/v2026.03)
 
 ## Contact
 
