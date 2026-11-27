@@ -1,8 +1,15 @@
-# Security research
+# Szymon Szymkowiak
+
+## Projects
+
+- **[Dream](https://github.com/emancypage/dream)** is a Python tool I built to carry decisions from one coding session into the next. It turns agent conversations into notes you can review and links each note back to the session it came from.
+- **[LLM model research](https://github.com/emancypage/llm-models-research)** is where I test how editing the weights of Qwen, Bielik and Llama affects their answers. I publish the protocols, code and results, including a [Bielik experiment](https://github.com/emancypage/llm-models-research/blob/main/reports/2026-11-21-bielik-11b-polish-tense/results.md) where all 128 verb-tense answers stayed the same after the edit.
+
+## Security research
 
 I publish details here only after the vendor ships a fix and the advisory is public.
 
-## Public findings
+### Public findings
 
 Security vulnerabilities I found and reported through coordinated disclosure.
 
@@ -14,7 +21,7 @@ Security vulnerabilities I found and reported through coordinated disclosure.
 
 I publish vulnerability details only after a fix is available and the issue is public.
 
-### CVE-2026-111982
+#### CVE-2026-111982
 
 **Profile Builder before 4.0.5: Multisite subsite Administrator to Network Super Admin account takeover.**
 
@@ -29,7 +36,7 @@ A missing account-level authorization check in the front-end Edit Profile form a
 
 References: [WPScan advisory](https://wpscan.com/vulnerability/b7d1fd86-3927-4cf2-88ed-46401e347320/), [CVE record](https://www.cve.org/CVERecord?id=CVE-2026-111982).
 
-### Chyrp Lite
+#### Chyrp Lite
 
 The [v2026.03 Sichuan release](https://github.com/xenocrat/chyrp-lite/releases/tag/v2026.03), published on 1 November 2026, credits [@emancypage](https://github.com/emancypage) for reporting two fixed vulnerabilities: blind SQL injection in search and account takeover in the password reset flow.
 
